@@ -7,3 +7,4 @@ Additional information about the environmental station besides/complementing the
 <img src="https://user-images.githubusercontent.com/91855312/148662405-bb98e746-bef9-46d3-b818-6e08d32f76ce.jpg" width=50% height=50%>
 </p>
 
+Arduino sketch is available at [indoorEnvSensor](tree/main/indoorEnvSensor)

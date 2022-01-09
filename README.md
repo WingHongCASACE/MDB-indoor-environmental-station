@@ -1,5 +1,5 @@
 # MDB-IndoorEnvironmentalStation
-Additional information about the environmental station besides/complementing the final report
+This repository provides additional information about the environmental station besides/complementing the final report
 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/91855312/148662397-80d6e5d8-9e85-4a08-bd39-7f0af238835f.jpg" width=50% height=50%>

@@ -3,7 +3,7 @@
 ### Comments on 3D printing materials/structures
 
 <p align="justify"> 
-The transparent filament does not allow clear look-through (figure below has chip depth in 1mm), if clean look is required acrylic is more reasonable
+The transparent filament does not allow clear look-through (figure below has chip depth in 1mm), if a clean look is required acrylic seems more reasonable
 (in contrast this could be helpful in some cases by refraction or smoothing, like tiolet windows?).
 </p>
 
@@ -27,7 +27,8 @@ It would be more structually stable if it is connected by more edges or have a l
 During the term break I (finially) have time to watch the tutorial videos of <a href=https://help.autodesk.com/view/fusion360/ENU/courses/#fusion-360-fundamentals>Fusion 360</a>.
 The self-paced learning resource contains a great variety of functions, such as sketching, solid/ mesh modeling, assembling and manufacturing, designing and simulating. 
 It even has a series about electronic basic and another about PCB. Many of the functions are impressive, 
-especially those about direct moelling and T-splines which can twist and deform (largely) freely.
+especially those about direct moelling and T-splines which can twist and deform with a very large degreen of freedom. 
+Another amazing tool is the generative design, which the software can generate models by itself after assigning the thresholds, constraints, and other parameters.
 <br/>
 <br/>
 The geometries (circle and ellipses) on my enclosure were drawn one by one. If I have known some functions before, I can automate/duplicate the process to improve efficiency and precision.

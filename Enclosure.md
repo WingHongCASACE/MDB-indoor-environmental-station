@@ -24,7 +24,7 @@ It would be more structually stable if it is connected by more edges or have a l
 
 ### Fusion 360 features
 <p align="justify"> 
-During the term break I (finially) have time to watch the tutorial videos of [Fusion 360](https://help.autodesk.com/view/fusion360/ENU/courses/#fusion-360-fundamentals).
+During the term break I (finially) have time to watch the tutorial videos of <a href=https://help.autodesk.com/view/fusion360/ENU/courses/#fusion-360-fundamentals>Fusion 360</a>.
 The self-paced learning resource contains a great variety of functions, such as sketching, solid/ mesh modeling, assembling and manufacturing, designing and simulating. 
 It even has a series about electronic basic and another about PCB. Many of the functions are impressive, 
 especially those about direct moelling and T-splines which can twist and deform (largely) freely.

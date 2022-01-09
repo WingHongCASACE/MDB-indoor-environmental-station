@@ -9,5 +9,7 @@ Additional information about the environmental station besides/complementing the
 
 * [Arduino sketch](indoorEnvSensor) for the functioning of sensors and connection to WiFi and MQTT is available 
 * [Enclosure](ENCLOSURE.md) contains comments and information related to sensor case, 3D modelling and printing
+* [Gallery](GALLERY.md) holds graphics about the project that were not posted elsewhere
 * [Temperature test](TEMP-TEST.md) provides complementary information about testing of distance between sensors for temperature differences as one of the reflections, it also explains why heating is required for a gas sensor
+
 

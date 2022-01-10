@@ -72,7 +72,7 @@ char msg[50];
 int value = 0;
 Timezone GB;
 
-void startWifi(){
+void startWifi(){         //corresponse to 0014 workshop but adjusted for WiFiNINA
   Serial.println();
   Serial.print("Connecting to ");
   Serial.println(ssid);
@@ -89,7 +89,7 @@ void startWifi(){
   Serial.println(WiFi.localIP());
 }
 
-void syncDate() {
+void syncDate() {             //corresponse to 0014 workshop
   // get real date and time
   waitForSync();
   Serial.println("UTC: " + UTC.dateTime());
@@ -115,12 +115,8 @@ void setup() {
  startWifi();
  syncDate();
 
- // You can provide a unique client ID, if not set the library uses Arduino-millis()
-  // Each client must have a unique client ID
-  // mqttClient.setId("clientId");
 
-  // You can provide a username and password for authentication
-   mqttClient.setUsernamePassword(mqttuser, mqttpass);
+  mqttClient.setUsernamePassword(mqttuser, mqttpass);
 
   Serial.print("Attempting to connect to the MQTT broker: ");
   Serial.println(broker);
@@ -131,7 +127,7 @@ void setup() {
     while (1);
   }
 
-  Serial.println("You're connected to the MQTT broker!");
+  Serial.println("MQTT broker connected");
   Serial.println();
 }
 
@@ -178,7 +174,7 @@ void readData(){
   lcd.print(lux);
   lcd.print(" lx");
 
-  if (gasValue > 180) {
+  if (gasValue > 180) {                       //buzzer is used as an gas/smoke alarm: it will remain silent and unnoticed if gas level remains below threshold
     tone(buzzerPin,1000);
     delay(2000); // wait 2000ms
   }
@@ -188,7 +184,7 @@ void readData(){
     delay(500); // wait 500ms
   }
 
-  if (temperature <=10){
+  if (temperature <=10){                      //number of LED ring to be on depends on temperature; color of each LED was fixed by given RGB value
     pixels.clear();
     pixels.setBrightness(20);
     pixels.setPixelColor(14,pixels.Color(3,2,200));
@@ -346,7 +342,7 @@ void readData(){
   }
 }
 
-void sendMQTT() {
+void sendMQTT() {                    //corresponse to 0014 workshop but adjusted for ArduinoMqttClient
     mqttClient.poll();
     // send message, the Print interface can be used to set the message contents
     mqttClient.beginMessage(topic);
